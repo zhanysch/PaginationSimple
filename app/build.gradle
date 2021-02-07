@@ -31,6 +31,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -56,7 +59,7 @@ dependencies {
     implementation "org.koin:koin-androidx-fragment:$koin_version"
 
     //paging
-    implementation "androidx.paging:paging-runtime-ktx:3.0.0-alpha13"
+    implementation "androidx.paging:paging-runtime-ktx:3.0.0-alpha11"
 
     def room_version = "2.3.0-alpha03"
     implementation "androidx.room:room-runtime:$room_version"

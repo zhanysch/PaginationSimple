@@ -15,4 +15,7 @@ interface PagingCasheDao {
     @Query("SELECT * FROM rowsmodel")
     fun getAll(): PagingSource<Int, RowsModel>
 
+    @Query("DELETE FROM rowsmodel")
+   suspend fun deleteAll()
+
 }
